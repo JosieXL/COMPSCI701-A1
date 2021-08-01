@@ -6,6 +6,29 @@
 # Windows, at minimum "/" has to be replaced by "\" and ":" (colon) has to 
 # be replaced by ";" (semicolon). Other changes may be necessary.
 
+<<<<<<< HEAD
+# work in Linux
+#tests: compile
+#	java -cp resources/junit-3.8.2.jar:resources/kalah20200717.jar:bin junit.textui.TestRunner kalah.test.TestKalah
+
+#play: compile
+#	java -cp resources/junit-3.8.2.jar:resources/kalah20200717.jar:bin kalah.Kalah
+  
+#compile:
+#	mkdir -p bin
+#	javac -d bin -cp resources/junit-3.8.2.jar:resources/kalah20200717.jar:bin:src src/kalah/Kalah.java
+
+## work in Windows cmd
+tests: compile
+	java -cp resources\junit-3.8.2.jar;resources\kalah20200717.jar;bin junit.textui.TestRunner kalah.test.TestKalah
+
+play: compile
+	java -cp resources\junit-3.8.2.jar;resources\kalah20200717.jar;bin kalah.Kalah
+  
+compile:
+	mkdir -p bin
+	javac -d bin -cp resources\junit-3.8.2.jar;resources\kalah20200717.jar;bin;src src\kalah\Kalah.java
+=======
 tests: compile
 	java -cp resources/junit-3.8.2.jar:resources/kalah20200717.jar:bin junit.textui.TestRunner kalah.test.TestKalah
 
@@ -15,3 +38,4 @@ play: compile
 compile:
 	mkdir -p bin
 	javac -d bin -cp resources/junit-3.8.2.jar:resources/kalah20200717.jar:bin:src src/kalah/Kalah.java
+>>>>>>> 866f88214f164e6ba4eb71c5f2ad37dbdbebc9ec
